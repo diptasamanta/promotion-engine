@@ -1,7 +1,7 @@
 /**
  * 
  */
-package common;
+package enums;
 
 /**
  * @author dipta Enum that contains the values against a particular code.
