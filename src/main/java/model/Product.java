@@ -11,6 +11,11 @@ public class Product {
 	private String uniqueCode;
 	private int price;
 	
+	public Product(String uniqueCode, int price) {
+		this.uniqueCode = uniqueCode;
+		this.price = price;
+	}
+
 	public String getUniqueCode() {
 		return uniqueCode;
 	}
