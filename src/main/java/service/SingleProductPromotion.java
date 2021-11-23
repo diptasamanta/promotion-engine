@@ -23,14 +23,11 @@ public class SingleProductPromotion implements Promotions {
 	    if (list.size() == 1 && list.get(0).getCount() >= items) {
 
 	      Cart discountCart = list.get(0);
-	      int discountedProductPrice = ((discountCart.getCount() / items) * this.discount)
+	      int discountedPrice = ((discountCart.getCount() / items) * this.discount)
 	              + (discountCart.getCount() % items * discountCart.getProduct().getPrice());
 	      cartList.remove(list.get(0));
-	      return discountedProductPrice;
+	      return discountedPrice;
 	    }
 	    return 0;
 	}
-	
-	
-
 }
